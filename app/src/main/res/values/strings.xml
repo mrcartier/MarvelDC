@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MarvelDC</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="tab_titles">
+        <item>Marvel</item>
+        <item>DC</item>
+    </string-array>
+
+</resources>
