@@ -68,5 +68,5 @@ class MarvelFragment : Fragment() {
     override fun onDetach() {
         super.onDetach()
     }
-}// Required empty public constructor
+}
 
