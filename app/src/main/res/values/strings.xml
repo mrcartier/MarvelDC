@@ -7,4 +7,29 @@
         <item>DC</item>
     </string-array>
 
+    <string name="BlackWidow">Black Widow</string>
+    <string name="BlackWidowPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1480111869/blackwidow_m8lut5.jpg</string>
+    <string name="CaptainAmerica">Captain America</string>
+    <string name="CaptainAmericaPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1480111898/captain-america-3_ejiazp.jpg</string>
+    <string name="Hawkeye">Hawkeye</string>
+    <string name="HawkeyePic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1480111883/Hawkeye-marvel-comics-4514338-440-348_w4r8o3.jpg</string>
+    <string name="TheHulk">The Hulk</string>
+    <string name="TheHulkPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481074202/Hulk_u9vmzs.jpg</string>
+    <string name="IronMan">Iron Man</string>
+    <string name="IronManPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481074210/Iron_Man_comics_sbl1jq.jpg</string>
+    <string name="Thor">Thor</string>
+    <string name="ThorPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1480111947/Thor_Odinson__Earth-8096__003_ltbtoz.png</string>
+    <string name="Aquaman">Aquaman</string>
+    <string name="AquamanPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481065798/aquaman-111kjskldjklsd-1900x700_c_rzddcm.jpg</string>
+    <string name="Batman">Batman</string>
+    <string name="BatmanPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481073577/batman_a2rvqt.jpg</string>
+    <string name="Cyborg">Cyborg</string>
+    <string name="CyborgPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481058336/cyborg_gifjiv.jpg</string>
+    <string name="TheFlash">The Flash</string>
+    <string name="TheFlashPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481058317/theflash_b8tvxx.jpg</string>
+    <string name="Superman">Superman</string>
+    <string name="SupermanPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481058310/new-52-superman-630x420_iukuac.jpg</string>
+    <string name="WonderWoman">Wonder Woman</string>
+    <string name="WonderWomanPic">https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481058327/Wonder-Woman-DC-Comics-750x400_jqgzyx.jpg</string>
+
 </resources>

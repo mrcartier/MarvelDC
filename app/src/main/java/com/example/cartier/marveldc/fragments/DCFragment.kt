@@ -9,28 +9,29 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
+import com.example.cartier.marveldc.R
 import com.example.cartier.marveldc.adapters.CardAdapter
 import com.example.cartier.marveldc.data.model.CardItem
-import com.example.cartier.marveldc.R
 
 import java.util.ArrayList
 
 /**
- * Created by Cartier on 12/6/2016.
+ * Created by gerry on 4/28/2017.
  */
+
 class DCFragment : Fragment() {
 
     internal var cards = ArrayList<CardItem>()
+    private val hero_names = ArrayList<String>()
+    private val hero_image_urls = ArrayList<String>()
     private var adapter: CardAdapter? = null
     private var recyclerView: RecyclerView? = null
-
-    private val hero_names = arrayOf("Aquaman", "Batman", "Cyborg", "The Flash", "Superman", "Wonder Woman")
-
-    private val hero_image_urls = arrayOf("https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481065798/aquaman-111kjskldjklsd-1900x700_c_rzddcm.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481073577/batman_a2rvqt.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481058336/cyborg_gifjiv.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481058317/theflash_b8tvxx.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481058310/new-52-superman-630x420_iukuac.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481058327/Wonder-Woman-DC-Comics-750x400_jqgzyx.jpg")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        getDCNames()
+        getDCUrls()
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -47,6 +48,25 @@ class DCFragment : Fragment() {
 
         // Inflate the layout for this fragment
         return rootView
+    }
+
+    fun getDCNames() {
+        val image_names = arrayOf(resources.getString(R.string.Aquaman).toString(), resources.getString(R.string.Batman).toString(), resources.getString(R.string.Cyborg).toString(), resources.getString(R.string.TheFlash).toString(), resources.getString(R.string.Superman), resources.getString(R.string.WonderWoman))
+
+        for (i in image_names.indices) {
+            val name = image_names[i]
+            hero_names.add(name)
+        }
+
+    }
+
+    fun getDCUrls() {
+        val image_urls = arrayOf(resources.getString(R.string.AquamanPic).toString(), resources.getString(R.string.BatmanPic).toString(), resources.getString(R.string.CyborgPic).toString(), resources.getString(R.string.TheFlashPic).toString(), resources.getString(R.string.SupermanPic), resources.getString(R.string.WonderWomanPic))
+
+        for (i in image_urls.indices) {
+            val url = image_urls[i]
+            hero_image_urls.add(url)
+        }
     }
 
     private val data: ArrayList<CardItem>

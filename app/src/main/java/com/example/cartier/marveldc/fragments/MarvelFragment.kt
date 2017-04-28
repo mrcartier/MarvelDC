@@ -9,28 +9,29 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
+import com.example.cartier.marveldc.R
 import com.example.cartier.marveldc.adapters.CardAdapter
 import com.example.cartier.marveldc.data.model.CardItem
-import com.example.cartier.marveldc.R
 
 import java.util.ArrayList
 
 /**
- * Created by Cartier on 12/6/2016.
+ * Created by gerry on 4/28/2017.
  */
+
 class MarvelFragment : Fragment() {
 
     internal var cards = ArrayList<CardItem>()
+    private val hero_names = ArrayList<String>()
+    private val hero_image_urls = ArrayList<String>()
     private var adapter: CardAdapter? = null
     private var recyclerView: RecyclerView? = null
-
-    private val hero_names = arrayOf("Black Widow", "Captain America", "Hawkeye", "The Hulk", "Iron Man", "Thor")
-
-    private val hero_image_urls = arrayOf("https://res.cloudinary.com/dv2fyyrmo/image/upload/v1480111869/blackwidow_m8lut5.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1480111898/captain-america-3_ejiazp.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1480111883/Hawkeye-marvel-comics-4514338-440-348_w4r8o3.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481074202/Hulk_u9vmzs.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1481074210/Iron_Man_comics_sbl1jq.jpg", "https://res.cloudinary.com/dv2fyyrmo/image/upload/v1480111947/Thor_Odinson__Earth-8096__003_ltbtoz.png")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        getMarvelNames()
+        getMarvelUrls()
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -47,6 +48,25 @@ class MarvelFragment : Fragment() {
 
         // Inflate the layout for this fragment
         return rootView
+    }
+
+    fun getMarvelNames() {
+        val image_names = arrayOf(resources.getString(R.string.BlackWidow).toString(), resources.getString(R.string.CaptainAmerica).toString(), resources.getString(R.string.Hawkeye).toString(), resources.getString(R.string.TheHulk).toString(), resources.getString(R.string.IronMan), resources.getString(R.string.Thor))
+
+        for (i in image_names.indices) {
+            val name = image_names[i]
+            hero_names.add(name)
+        }
+
+    }
+
+    fun getMarvelUrls() {
+        val image_urls = arrayOf(resources.getString(R.string.BlackWidowPic).toString(), resources.getString(R.string.CaptainAmericaPic).toString(), resources.getString(R.string.HawkeyePic).toString(), resources.getString(R.string.TheHulkPic).toString(), resources.getString(R.string.IronManPic), resources.getString(R.string.ThorPic))
+
+        for (i in image_urls.indices) {
+            val url = image_urls[i]
+            hero_image_urls.add(url)
+        }
     }
 
     private val data: ArrayList<CardItem>
@@ -69,4 +89,3 @@ class MarvelFragment : Fragment() {
         super.onDetach()
     }
 }
-
