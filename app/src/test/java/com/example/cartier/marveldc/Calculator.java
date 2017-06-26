@@ -1,7 +1,7 @@
 package com.example.cartier.marveldc;
 
 /**
- * Created by gerry on 2/8/2017.
+ * Created by Cartier on 2/8/2017.
  */
 
 public class Calculator {
