@@ -9,7 +9,7 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 
 /**
- * Created by gerry on 2/8/2017.
+ * Created by Cartier on 2/8/2017.
  */
 
 public class RecyclerViewTest extends ActivityInstrumentationTestCase2<MainActivity> {
