@@ -15,7 +15,7 @@ import com.squareup.picasso.Picasso
 import java.util.ArrayList
 
 /**
- * Created by Cartier on 12/6/2016.
+ * Created by cartier on 12/6/2016.
  */
 class CardAdapter(private val context: Context, private val cards: ArrayList<CardItem>) : RecyclerView.Adapter<CardAdapter.ViewHolder>() {
 

@@ -1,7 +1,7 @@
 package com.example.cartier.marveldc.data.model
 
 /**
- * Created by Cartier on 12/6/2016.
+ * Created by cartier on 12/6/2016.
  */
 class CardItem {
 
