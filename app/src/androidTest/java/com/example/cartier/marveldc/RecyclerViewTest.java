@@ -15,7 +15,7 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 
 /**
- * Created by cartier on 2/8/2017.
+ * Created by Cartier on 2/8/2017.
  */
 @RunWith(AndroidJUnit4.class)
 public class RecyclerViewTest extends ActivityTestRule<MainActivity> {

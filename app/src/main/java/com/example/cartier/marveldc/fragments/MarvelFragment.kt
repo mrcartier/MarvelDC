@@ -16,7 +16,7 @@ import com.example.cartier.marveldc.data.model.CardItem
 import java.util.ArrayList
 
 /**
- * Created by cartier on 4/28/2017.
+ * Created by Cartier on 4/28/2017.
  */
 
 class MarvelFragment : Fragment() {

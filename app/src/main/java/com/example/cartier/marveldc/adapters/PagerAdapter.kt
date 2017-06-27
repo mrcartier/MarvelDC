@@ -9,7 +9,7 @@ import com.example.cartier.marveldc.fragments.MarvelFragment
 
 
 /**
- * Created by cartier on 12/6/2016.
+ * Created by Cartier on 12/6/2016.
  */
 class PagerAdapter(fm: FragmentManager, internal var mNumOfTabs: Int) : FragmentStatePagerAdapter(fm) {
 

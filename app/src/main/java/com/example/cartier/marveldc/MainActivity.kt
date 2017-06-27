@@ -11,7 +11,7 @@ import android.view.MenuItem
 import com.example.cartier.marveldc.adapters.PagerAdapter
 
 /**
- * Created by cartier on 12/6/2016.
+ * Created by Cartier on 12/6/2016.
  */
 class MainActivity : AppCompatActivity() {
 
