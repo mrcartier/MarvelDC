@@ -8,9 +8,6 @@ import com.example.cartier.marveldc.fragments.DCFragment
 import com.example.cartier.marveldc.fragments.MarvelFragment
 
 
-/**
- * Created by Cartier on 12/6/2016.
- */
 class PagerAdapter(fm: FragmentManager, internal var mNumOfTabs: Int) : FragmentStatePagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment? {
