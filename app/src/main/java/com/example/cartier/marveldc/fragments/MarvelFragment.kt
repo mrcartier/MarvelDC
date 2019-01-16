@@ -34,16 +34,16 @@ class MarvelFragment : Fragment() {
         getMarvelUrls()
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater!!.inflate(R.layout.fragment_marvel, container, false)
 
         recyclerView = rootView.findViewById(R.id.marvel_recycler_view) as RecyclerView
         recyclerView!!.setHasFixedSize(true)
-        val layoutManager = LinearLayoutManager(activity.applicationContext)
+        val layoutManager = LinearLayoutManager(activity?.applicationContext)
         recyclerView!!.layoutManager = layoutManager
 
         val cards = data
-        adapter = CardAdapter(activity.applicationContext, cards)
+        adapter = CardAdapter(activity?.applicationContext!!, cards)
         recyclerView!!.adapter = adapter
 
         // Inflate the layout for this fragment
